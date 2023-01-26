@@ -3,6 +3,7 @@
 :root {
   --blue: #79a9f5;
   --myblue: #1a5ad9;
+  --mydarkblue: #0439d9;
   --indigo: #c45f90;
   --purple: #a16ae8;
   --pink: #fc8bc0;
@@ -2908,6 +2909,7 @@ textarea.form-control.is-invalid {
 
 .btn:hover {
   color: #252627;
+  background-color: #0439d9 !important;
   text-decoration: none;
 }
 
@@ -2935,8 +2937,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #f63750;
-  border-color: #f62b45;
+  background-color: var(--mydarkblue);
+  border-color: var(--mydarkblue);
 }
 
 .btn-primary:focus,
@@ -2955,8 +2957,8 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #f62b45;
-  border-color: #f51f3a;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -7507,7 +7509,7 @@ a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #f62b45 !important;
+  background-color: var(--mydarkblue) !important;
 }
 
 .bg-secondary {
