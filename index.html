@@ -99,7 +99,7 @@
             <li class="brand-txt">
               <h5 class="brand-title">Tamim</h5>
               <div class="brand-subtitle">
-                Aspiring Cyber/Software Developer
+                Software Developer
               </div>
             </li>
           </ul>
@@ -150,7 +150,15 @@
               <span>Current position</span> : Software Developer @ Vega
               Technology
             </li>
-            <li><span>Age</span> : 22</li>
+            <li><span>Age</span> :
+              <script>
+                const birth = new Date('2001-08-21');
+                const now = new Date();
+                const age = now.getFullYear() - birth.getFullYear() - 
+                            (now < new Date(now.getFullYear(), birth.getMonth(), birth.getDate()) ? 1 : 0);
+                document.write(' ' + age);
+              </script>
+            </li>
             <li><span>Email</span> : talmahdi.2181@gmail.com</li>
             <li><span>Location</span> : Surrey, England, UK</li>
           </ul>
@@ -288,7 +296,7 @@
                 <h6 class="title text-danger">2019 - 2023</h6>
                 <p>BSc Computer Science | University of Surrey</p>
                 <p class="subtitle">
-                  Currently predicted 1st Class with honors
+                  Attained 1st Class with honors
                 </p>
                 <hr />
                 <h6 class="title text-danger">2017 - 2019</h6>
@@ -859,6 +867,44 @@
       <div class="container">
         <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
         <div class="row">
+
+          <div class="blog-card">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/AzureCert.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h6 class="title">Azure AZ-900</h6>
+
+              <p class="post-details">
+                <a>By: Tamim Almahdi</a>
+                <a>July 2024</a>
+                <!-- <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                            <a href="#"><i class="ti-comment"></i> 264</a> -->
+              </p>
+
+              <p>
+                  🎉 Excited to share that I've officially earned my Microsoft Azure AZ-900 certification! 🎉
+                  <br><br>
+
+                  Achieving this milestone has been an incredible journey and I'm thrilled to have gained new insights and skills. Here are three key things I've learned as a software developer through this certification:
+                  <br>
+                  🚀 Cloud Fundamentals
+                  🔐 Security Best Practices
+                  📈 Scalability and Efficiency
+                <br />
+                <a
+                  href="https://www.linkedin.com/posts/talmahdi_microsoftazure-azurecertified-continuouslearning-activity-7223611350252462080-1L_d?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKTdjMBjv-QTG54fv5E0EM3W5ylX5SHonQ"
+                  target="_blank"
+                  class="read-more"
+                  >Read more <i class="ti-angle-double-right"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+
           <div class="blog-card">
             <div class="img-holder">
               <img
@@ -930,10 +976,9 @@
               ></a>
             </div>
           </div>
-          <!-- end of blog wrapper -->
 
           <!-- blog-card -->
-          <div class="blog-card">
+          <!-- <div class="blog-card">
             <div class="img-holder">
               <img
                 src="assets/imgs/IBM2.jpg"
@@ -946,8 +991,6 @@
               <p class="post-details">
                 <a>By: Tamim Almahdi</a>
                 <a>June 2023</a>
-                <!-- <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a> -->
               </p>
 
               <p>
@@ -972,7 +1015,8 @@
                 ></a>
               </p>
             </div>
-          </div>
+          </div> -->
+
           <!-- end of blog wrapper -->
           <!-- blog-card -->
           <!-- <div class="blog-card">
